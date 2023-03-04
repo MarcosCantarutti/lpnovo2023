@@ -1,0 +1,72 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-size: 62.5%;
+  list-style-type: none;
+  background-color: #0e2440;
+  color: #ffff;
+}
+
+.header {
+  width: 100%;
+}
+
+header .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 5rem;
+  margin: 0 auto;
+  position: absolute;
+  margin-left: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+header .header-container .logo {
+  width: 3rem;
+  transform: scale(3);
+}
+
+header .header-container .social {
+  width: 3rem;
+}
+
+header .header-container nav .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+header .header-container nav .nav-container .nav-item a {
+  color: #ffff;
+  font-size: 1rem;
+}
+
+#main-banner {
+  width: 100vw;
+}
+
+#main-banner .banner-container {
+  width: 100vw;
+  height: 100vh;
+  background: url('./BANNER-PRINCIPAL.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
