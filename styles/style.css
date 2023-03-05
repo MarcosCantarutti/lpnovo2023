@@ -197,6 +197,9 @@ header .header-container nav .nav-container .nav-item a {
   padding: 100px;
   text-align: left;
   width: 50%;
+  height: 100vh;
+  z-index: 1;
+  background-color: #0e2440;
 }
 #terapias .terapias-text h1 {
   font-size: 40px;
@@ -209,16 +212,23 @@ header .header-container nav .nav-container .nav-item a {
 }
 /*SLIDE*/
 #terapias .swiper-container {
-  max-width: 0px;
+  width: 30%;
 }
 
 #terapias .swiper-wrapper {
   display: flex;
   align-items: center;
+  gap: 0;
   justify-content: flex-start;
-  max-width: 500px;
+  z-index: -1;
+}
+
+#terapias .swiper-slide {
+  max-width: 300px;
 }
 
 #terapias .swiper-wrapper img {
-  width: 350px;
+  width: 280px;
+  display: block;
+  object-fit: cover;
 }
