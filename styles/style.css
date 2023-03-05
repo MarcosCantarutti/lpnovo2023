@@ -16,8 +16,10 @@ body {
   list-style-type: none;
   background-color: #0e2440;
   color: #ffff;
+  overflow-x: hidden;
 }
 
+/* header */
 .header {
   width: 100%;
 }
@@ -36,10 +38,11 @@ header .header-container {
   right: 0;
   text-align: center;
   font-weight: bold;
+  z-index: 99;
 }
 
 header .header-container .logo {
-  width: 96px;
+  width: 80px;
   transform: scale(2);
 }
 
@@ -61,8 +64,10 @@ header .header-container nav .nav-container .nav-item a {
   font-size: 1rem;
 }
 
+/* banner */
+
 #main-banner {
-  width: 100vw;
+  overflow-x: hidden;
 }
 
 #main-banner .banner-container {
@@ -70,8 +75,10 @@ header .header-container nav .nav-container .nav-item a {
   height: 100vh;
   background: url('./BANNER-PRINCIPAL.png');
   background-size: cover;
+  /* position: relative; */
+
   background-repeat: no-repeat;
-  margin: 0 auto;
+  background-position: center;
 }
 
 #main-banner .banner-container .main-container {
@@ -95,8 +102,6 @@ header .header-container nav .nav-container .nav-item a {
 
 #main-banner .banner-container .main-container .main-button {
   margin-top: 100px;
-  border: 2px solid #d07f57;
-  border-radius: 10%;
   font-size: 20px;
   word-break: break-all;
   color: #ffff;
@@ -104,7 +109,172 @@ header .header-container nav .nav-container .nav-item a {
   font-weight: bold;
   text-transform: uppercase;
   text-align: left;
-  width: 370px;
-  height: 120px;
-  padding: 20px;
+  border-radius: 28px;
+  border: 2px solid #d07f57;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #d07f57;
+  transition: ease all 0.3s;
+}
+
+#main-banner .banner-container .main-container .main-button:hover {
+  background-color: #d07f57;
+}
+#main-banner .banner-container .main-container .main-button:active {
+  position: relative;
+  top: 1px;
+}
+
+/* About LP */
+
+#sobre-lp {
+  display: flex;
+  align-items: center;
+  padding: 4rem 8rem;
+  gap: 10rem;
+  border-top: 6px solid #d07f57;
+  border-bottom: 4px solid #ffffff;
+
+  background: url('../assets/BANNER-2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sobre-lp .about-lp-text {
+  max-width: 60%;
+}
+
+#sobre-lp .about-lp-text h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#sobre-lp .about-lp-text h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#sobre-lp .about-lp-text p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#sobre-lp .about-lp-btn .button {
+  font-size: 16px;
+
+  color: #ffff;
+  background-color: transparent;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  border-radius: 28px;
+  border: 2px solid #d07f57;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #d07f57;
+  transition: ease all 0.3s;
+}
+
+#sobre-lp .about-lp-btn .button:hover {
+  background-color: #d07f57;
+}
+
+/* terapias */
+
+#terapias {
+  display: flex;
+  /* padding: 50px; */
+}
+
+#terapias .terapias-text {
+  padding: 50px;
+  text-align: left;
+}
+#terapias .terapias-text h1 {
+  font-size: 40px;
+  word-break: break-all;
+  max-width: 250px;
+}
+#terapias .terapias-text p {
+  font-size: 15px;
+  max-width: 250px;
+}
+
+.slideshow-container {
+  max-width: 600px;
+  /* position: relative; */
+  margin: auto;
+  display: flex;
+}
+
+/* Hide the images by default */
+.mySlides {
+  /* display: none; */
+  padding: 0px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  /* position: absolute; */
+  /* top: 50%; */
+  width: auto;
+  /* margin-top: -22px; */
+  /* padding: 16px; */
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  /* position: absolute; */
+  /* bottom: 8px; */
+  width: 100%;
+  text-align: center;
+  z-index: 99;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  /* position: absolute; */
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
