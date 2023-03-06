@@ -257,3 +257,72 @@ header .header-container nav .nav-container .nav-item a {
 #terapias .arrow img {
   width: 95px;
 }
+
+/*Etapas*/
+#etapas-consulta {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffff;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#etapas-consulta h1 {
+  color: #0e2440;
+  font-size: 50px;
+  max-width: 300px;
+}
+
+#etapas-consulta button {
+  margin-top: 80px;
+  font-size: 20px;
+  word-break: break-all;
+  color: #000;
+  background-color: transparent;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  border-radius: 28px;
+  border: 2px solid #d07f57;
+  display: inline-block;
+  cursor: pointer;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #d07f57;
+  transition: ease all 0.3s;
+}
+
+#etapas-consulta button:hover {
+  background-color: #d07f57;
+}
+
+#etapas-consulta p {
+  color: #000;
+}
+
+#etapas-consulta .etapas-quadros {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#etapas-consulta .etapas-quadros .quadro {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  height: 200px;
+  background-color: #ececec;
+  padding: 10px;
+  border-radius: 28px 0 0 28px;
+}
+
+#etapas-consulta .etapas-quadros .quadro h1 {
+  font-size: 150px;
+  padding: 20px;
+}
+
+#etapas-consulta .etapas-quadros .quadro p {
+  font-size: 16px;
+  padding: 20px;
+}
