@@ -190,29 +190,33 @@ header .header-container nav .nav-container .nav-item a {
 
 #terapias {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  position: relative;
+  width: 100%;
   /* padding: 50px; */
 }
 
 #terapias .terapias-text {
-  padding: 100px;
+  padding: 90px;
   text-align: left;
-  width: 50%;
-  height: 100vh;
+  width: 40%;
   z-index: 1;
-  background-color: #0e2440;
+  background-color: #000;
 }
 #terapias .terapias-text h1 {
   font-size: 40px;
   word-break: break-all;
-  max-width: 475px;
+  max-width: 260px;
 }
 #terapias .terapias-text p {
   font-size: 15px;
-  max-width: 450px;
+  max-width: 500px;
 }
 /*SLIDE*/
 #terapias .swiper-container {
-  width: 30%;
+  width: 60%;
 }
 
 #terapias .swiper-wrapper {
@@ -221,14 +225,35 @@ header .header-container nav .nav-container .nav-item a {
   gap: 0;
   justify-content: flex-start;
   z-index: -1;
+  margin: 0 auto;
 }
 
 #terapias .swiper-slide {
-  max-width: 300px;
+  max-width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #terapias .swiper-wrapper img {
   width: 280px;
   display: block;
   object-fit: cover;
+}
+
+#terapias .swiper-wrapper span {
+  position: absolute;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#terapias .arrow {
+  z-index: 99;
+  position: absolute;
+  right: 0;
+}
+
+#terapias .arrow img {
+  width: 95px;
 }
