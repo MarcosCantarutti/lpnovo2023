@@ -326,3 +326,40 @@ header .header-container nav .nav-container .nav-item a {
   font-size: 16px;
   padding: 20px;
 }
+
+/* ABA SOBRE */
+
+#main-about {
+  width: 100vw;
+  height: 200vh;
+  background-image: url('../assets/BANNER-PROFISSIONAIS.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main-about .about-01 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding: 50px;
+}
+
+#main-about .about-01 div {
+  width: 50vw;
+  height: 100vh;
+}
+
+#main-about .about-01 div h1 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+#main-about .about-01 div p {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+#maint-about .about-02 {
+  width: 100vw;
+  height: 100vh;
+}
