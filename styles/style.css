@@ -26,6 +26,11 @@ body {
 /* header */
 .header {
   width: 100%;
+  padding: 5px;
+}
+
+header .header-mobile {
+  display: none;
 }
 
 header .header-container {
@@ -36,7 +41,7 @@ header .header-container {
   flex-wrap: nowrap;
   gap: 6rem;
   margin: 0 auto;
-  position: absolute;
+  position: fixed;
   margin: 1rem auto 0;
   left: 0;
   right: 0;
@@ -66,6 +71,12 @@ header .header-container nav .nav-container {
 header .header-container nav .nav-container .nav-item a {
   color: #ffff;
   font-size: 1rem;
+}
+
+header .header-container div {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 /* banner */
@@ -487,4 +498,78 @@ footer img {
   color: #fff;
   -webkit-filter: invert(100%); /* Safari/Chrome */
   filter: invert(100%);
+}
+
+/* Responsivo */
+
+/* Extra large devices: 1200 >  */
+
+@media only screen and (max-width: 1200px) {
+  header .header-container {
+    display: none;
+  }
+
+  header .header-mobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0 50px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+
+  header .header-mobile .logo {
+    width: 80px;
+    transform: scale(2);
+  }
+
+  header .header-mobile .toggle {
+    filter: invert(100%);
+    cursor: pointer;
+  }
+
+  header .header-mobile .toggle.clicked {
+    border: 2px solid #d07f57;
+    padding: 1px;
+  }
+
+  /* TOOGLE NAV*/
+
+  .toggle-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 4px solid #d07f57;
+    margin: 0 auto;
+    position: absolute;
+    background-color: #0e2440;
+    width: 100vw;
+    right: 0;
+    display: none;
+    transition: ease all 0.5s;
+  }
+
+  .toggle-nav .nav-container {
+    margin: 20px;
+  }
+
+  .toggle-nav .nav-container .nav-item {
+    padding: 5px;
+  }
+
+  .toggle-nav .nav-container .nav-item a {
+    color: #fff;
+  }
+
+  .toggle-nav .social {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .toggle-nav .social a img {
+    width: 50px;
+  }
 }

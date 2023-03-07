@@ -1,9 +1,16 @@
 let swiperWrapper = document.querySelector('.swiper-wrapper');
-let button = document.querySelector('.swiper-button-next');
+let toggle = document.querySelector('.toggle');
 
-button.addEventListener('click', () => {
-  console.log(swiperWrapper.style.transform);
-  swiperWrapper.style.transform = 0;
+toggle.addEventListener('click', function myFunction() {
+  let menu = document.querySelector('.toggle-nav');
+
+  if (menu.style.display === 'flex') {
+    menu.style.display = 'none';
+    toggle.classList.remove('clicked');
+  } else {
+    menu.style.display = 'flex';
+    toggle.classList.add('clicked');
+  }
 });
 
 const swiper = new Swiper('.swiper-container', {
