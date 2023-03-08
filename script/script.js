@@ -14,8 +14,7 @@ toggle.addEventListener('click', function myFunction() {
 });
 
 const swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
-  setWrapperSize: true,
+  cssMode: true,
   direction: 'horizontal',
   speed: 2400,
   parallax: true,
@@ -27,5 +26,21 @@ const swiper = new Swiper('.swiper-container', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+});
+
+const swiperTest = new Swiper('.swiper-container-test', {
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  mousewheel: true,
+  keyboard: true,
+  setWrapperSize: true,
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+      setWrapperSize: true,
+    },
   },
 });

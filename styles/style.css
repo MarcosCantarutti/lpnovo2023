@@ -33,6 +33,10 @@ header .header-mobile {
   display: none;
 }
 
+header .toggle-nav {
+  display: none;
+}
+
 header .header-container {
   width: 100%;
   display: flex;
@@ -41,7 +45,7 @@ header .header-container {
   flex-wrap: nowrap;
   gap: 6rem;
   margin: 0 auto;
-  position: fixed;
+  position: absolute;
   margin: 1rem auto 0;
   left: 0;
   right: 0;
@@ -269,8 +273,20 @@ header .header-container div {
   right: 0;
 }
 
-#terapias .arrow img {
+#terapias .arrow img,
+#terapias .arrow-prev img {
   width: 95px;
+  cursor: pointer;
+}
+
+#terapias .arrow-prev {
+  z-index: 99;
+  position: absolute;
+  left: 700px;
+}
+
+#terapias .arrow-prev img {
+  transform: rotate(180deg);
 }
 
 /*Etapas*/
@@ -464,10 +480,13 @@ footer {
   justify-content: center;
   padding: 50px;
   border-top: #fff 4px solid;
+  margin: 0 auto;
+  gap: 20px;
 }
 
 footer .footer-msg {
   width: 200px;
+  margin-right: 100px;
 }
 
 footer .footer-msg h1 {
@@ -480,7 +499,7 @@ footer .footer-item {
   align-items: center;
   justify-content: center;
   width: 305px;
-  margin: 0 auto;
+
   background-color: #d07f57;
   height: 200px;
   border-radius: 28px;
@@ -491,6 +510,11 @@ footer .footer-item {
 footer .footer-item a {
   color: #fff;
   text-decoration: none;
+  transition: ease all 0.5s;
+}
+
+footer .footer-item a:hover {
+  color: #0e2440;
 }
 
 footer img {
@@ -514,7 +538,7 @@ footer img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: absolute;
     padding: 0 50px;
     left: 0;
     right: 0;
@@ -539,7 +563,7 @@ footer img {
   /* TOOGLE NAV*/
 
   .toggle-nav {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-around;
     border: 4px solid #d07f57;
@@ -548,7 +572,6 @@ footer img {
     background-color: #0e2440;
     width: 100vw;
     right: 0;
-    display: none;
     transition: ease all 0.5s;
   }
 
@@ -571,5 +594,380 @@ footer img {
 
   .toggle-nav .social a img {
     width: 50px;
+  }
+}
+
+/* IPAD */
+@media only screen and (max-width: 1024px) {
+  /* banner */
+
+  #main-banner .banner-container .main-container {
+    padding-top: 20%;
+    padding-right: 40%;
+  }
+
+  /* #main-banner .banner-container .main-container h1 {
+    font-size: 60px;
+    width: 450px;
+    word-break: break-all;
+  }
+
+  #main-banner .banner-container .main-container span {
+    font-size: 18px;
+  } */
+
+  #main-banner .banner-container .main-container .main-button {
+    margin-top: 80px;
+    font-size: 20px;
+    padding: 16px 20px;
+  }
+
+  /* About LP */
+
+  #sobre-lp {
+    padding: 2rem 4rem;
+    gap: 5rem;
+  }
+  /* 
+  #sobre-lp .about-lp-text {
+    max-width: 60%;
+  } */
+
+  /* #sobre-lp .about-lp-text h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  #sobre-lp .about-lp-text h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  #sobre-lp .about-lp-text p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  } */
+
+  /* #sobre-lp .about-lp-btn .button {
+    font-size: 16px;
+
+    color: #ffff;
+    background-color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    border-radius: 28px;
+    border: 2px solid #d07f57;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #d07f57;
+    transition: ease all 0.3s;
+  }
+
+  #sobre-lp .about-lp-btn .button:hover {
+    background-color: #d07f57;
+  } */
+
+  /* terapias */
+
+  #terapias .terapias-text {
+    padding: 50px;
+  }
+
+  #terapias .terapias-text h1 {
+    font-size: 30px;
+    word-break: break-all;
+    max-width: 180px;
+  }
+  #terapias .terapias-text p {
+    font-size: 15px;
+    max-width: 300px;
+  }
+
+  /*SLIDE*/
+
+  #terapias .swiper-wrapper img {
+    width: 250px;
+  }
+
+  #terapias .arrow {
+    z-index: 99;
+    position: absolute;
+    right: 0;
+  }
+
+  #terapias .arrow img,
+  #terapias .arrow-prev img {
+    width: 65px;
+  }
+
+  #terapias .arrow-prev {
+    z-index: 99;
+    position: absolute;
+    left: 350px;
+  }
+
+  /*Etapas*/
+
+  #etapas-consulta h1 {
+    color: #0e2440;
+    font-size: 40px;
+    max-width: 300px;
+  }
+
+  #etapas-consulta button {
+    margin-top: 60px;
+    font-size: 16px;
+  }
+
+  #etapas-consulta .etapas-quadros {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #etapas-consulta .etapas-quadros .quadro {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+  }
+  /* 
+  #etapas-consulta .etapas-quadros .quadro h1 {
+    font-size: 150px;
+    padding: 20px;
+  }
+
+  #etapas-consulta .etapas-quadros .quadro p {
+    font-size: 16px;
+    padding: 20px;
+  } */
+
+  /*footer*/
+
+  footer {
+    width: 100vw;
+    height: 60vh;
+    padding: 40px;
+    gap: 20px;
+  }
+
+  footer .footer-msg {
+    width: 200px;
+    margin-right: 20px;
+  }
+
+  footer .footer-msg h1 {
+    font-size: 30px;
+  }
+
+  footer .footer-item {
+    width: 300px;
+    height: 200px;
+  }
+
+  /* footer img {
+    width: 25%;
+    color: #fff;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  } */
+}
+
+/* CELULAR */
+
+@media only screen and (max-width: 650px) {
+  header .header-mobile .logo {
+    width: 60px;
+    transform: scale(2);
+  }
+
+  .toggle-nav {
+    margin: 50px auto;
+  }
+
+  /* banner */
+
+  #main-banner .banner-container {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #main-banner .banner-container .main-container {
+    padding-top: 30%;
+    padding-left: 10px;
+  }
+
+  #main-banner .banner-container .main-container h1 {
+    font-size: 40px;
+    width: 330px;
+    word-break: break-all;
+    padding-left: 30px;
+  }
+
+  #main-banner .banner-container .main-container span {
+    font-size: 16px;
+    padding-left: 30px;
+  }
+
+  #main-banner .banner-container .main-container .main-button {
+    margin-top: 40px;
+    font-size: 15px;
+    padding: 10px 30px;
+  }
+  /* * About LP */
+
+  #sobre-lp {
+    padding: 3rem;
+    gap: 5rem;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #sobre-lp .about-lp-text {
+    max-width: 100%;
+  }
+
+  #sobre-lp .about-lp-text h1 {
+    font-size: 30px;
+  }
+
+  #sobre-lp .about-lp-btn .button {
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  /* terapias */
+  #terapias {
+    flex-direction: column;
+  }
+
+  #terapias .terapias-text {
+    padding: 50px;
+    width: 100vw;
+  }
+
+  #terapias .terapias-text h1 {
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #terapias .terapias-text p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  /*SLIDE*/
+
+  #terapias .swiper-wrapper img {
+    width: 250px;
+  }
+
+  #terapias .arrow {
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    bottom: 250px;
+  }
+
+  #terapias .arrow img,
+  #terapias .arrow-prev img {
+    width: 60px;
+  }
+
+  #terapias .arrow-prev {
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    bottom: 250px;
+  }
+
+  /*Etapas*/
+
+  #etapas-consulta {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #etapas-consulta h1 {
+    color: #0e2440;
+    font-size: 30px;
+    max-width: 500px;
+    margin-top: 20px;
+  }
+
+  #etapas-consulta button {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+
+  #etapas-consulta .etapas-quadros {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #etapas-consulta .etapas-quadros .quadro {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    justify-content: center;
+  }
+
+  #etapas-consulta .etapas-quadros .quadro h1 {
+    font-size: 120px;
+    padding: 20px;
+  }
+
+  #etapas-consulta .etapas-quadros .quadro p {
+    font-size: 15px;
+    padding: 20px;
+  }
+
+  /*DEPOIMENTOS*/
+
+  /* #testimonials {
+  max-height: 100vw;
+  padding: 100px;
+  background-image: url('../assets/BANNER-2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: #d07f57 4px solid;
+} */
+
+  .swiper-wrapper-test {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  /*footer*/
+
+  footer {
+    width: 100vw;
+    height: 100vh;
+    padding: 40px;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  footer .footer-msg {
+    width: 200px;
+    margin-right: 0px;
+  }
+
+  footer .footer-msg h1 {
+    font-size: 20px;
   }
 }
