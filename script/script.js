@@ -14,7 +14,6 @@ toggle.addEventListener('click', function myFunction() {
 });
 
 const swiper = new Swiper('.swiper-container', {
-  cssMode: true,
   direction: 'horizontal',
   speed: 2400,
   parallax: true,
