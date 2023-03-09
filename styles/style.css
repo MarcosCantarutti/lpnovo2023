@@ -990,6 +990,14 @@ footer img {
 
   /*footer*/
 
+  .contact {
+    gap: 50px;
+  }
+
+  .container-all {
+    gap: 50px;
+  }
+
   .contact .footer-msg h1 {
     font-size: 25px;
   }
@@ -1171,6 +1179,10 @@ footer img {
     gap: 30px;
   }
 
+  .container-all {
+    gap: 50px;
+  }
+
   .contact .footer-msg h1 {
     font-size: 25px;
   }
@@ -1186,9 +1198,5 @@ footer img {
     min-height: 250px;
     padding: 20px;
     margin: 0 auto;
-  }
-
-  .container-all {
-    gap: 50px;
   }
 }
