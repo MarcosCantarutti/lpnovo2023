@@ -7,6 +7,7 @@
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
+
 ul,
 li {
   list-style: none;
@@ -14,6 +15,7 @@ li {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -142,6 +144,7 @@ header .header-container div {
 #main-banner .banner-container .main-container .main-button:hover {
   background-color: #d07f57;
 }
+
 #main-banner .banner-container .main-container .main-button:active {
   position: relative;
   top: 1px;
@@ -224,15 +227,18 @@ header .header-container div {
   z-index: 1;
   background-color: #000;
 }
+
 #terapias .terapias-text h1 {
   font-size: 40px;
   word-break: break-all;
   max-width: 260px;
 }
+
 #terapias .terapias-text p {
   font-size: 15px;
   max-width: 500px;
 }
+
 /*SLIDE*/
 #terapias .swiper-container {
   width: 60%;
@@ -282,7 +288,8 @@ header .header-container div {
 #terapias .arrow-prev {
   z-index: 99;
   position: absolute;
-  left: 500px;
+  /* left: 50px; */
+  margin-right: 300px;
 }
 
 #terapias .arrow-prev img {
@@ -358,8 +365,162 @@ header .header-container div {
   padding: 20px;
 }
 
-/* ABA SOBRE */
+/*DEPOIMENTOS*/
 
+#testimonials {
+  max-height: 50rem;
+
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-top: #d07f57 4px solid;
+}
+
+#testimonials .main-title-container .main-title {
+  font-size: 30px;
+}
+
+#testimonials .testimonials {
+  max-width: 400px;
+}
+
+#testimonials .testimonials p {
+  margin: 25px 0;
+}
+
+#testimonials .swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  gap: 50px;
+  transition-property: transform;
+  transition-timing-function: var(
+    --swiper-wrapper-transition-timing-function,
+    initial
+  );
+  box-sizing: content-box;
+}
+/* 
+#testimonials .swiper-wrapper .testimonial {
+} */
+
+/*footer*/
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 4px solid #d07f57;
+  padding: 50px;
+  margin-top: 100px;
+  background-color: #040e28;
+}
+
+.contact .footer-msg h1 {
+  color: #040e28;
+  font-size: 40px;
+  text-shadow: 2px 2px 0 #d07f57, 2px -2px 0 #d07f57, -2px 2px 0 #d07f57,
+    -2px -2px 0 #d07f57, 2px 0px 0 #d07f57, 0px 2px 0 #d07f57,
+    -2px 0px 0 #d07f57, 0px -2px 0 #d07f57;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  width: 20%;
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: #0d2a59;
+  width: 350px;
+  min-height: 250px;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 30px;
+  margin: 0 auto;
+
+  box-shadow: -20px -20px 0px 0px #d07f57;
+  border-radius: 10px;
+
+  -webkit-animation-name: shadow-show;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1.5s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: shadow-show;
+  animation-duration: 1.5s;
+
+  -webkit-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  -o-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  /* custom */
+}
+
+footer .container hr {
+  display: block;
+  border: none;
+  height: 3px;
+  background-color: #d07f57;
+  margin: 10px 0;
+
+  -webkit-animation-name: line-show;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.3s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: line-show;
+  animation-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  -o-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  /* custom */
+}
+
+footer img {
+  width: 30%;
+  color: #fff;
+  padding: 10px;
+  -webkit-filter: invert(100%);
+  /* Safari/Chrome */
+  filter: invert(100%);
+}
+
+/* ABA SOBRE */
 #main-about {
   width: 100vw;
   height: 350vh;
@@ -410,118 +571,6 @@ header .header-container div {
 #main-about .about-02 div p {
   font-size: 16px;
   margin-bottom: 5px;
-}
-
-/*DEPOIMENTOS*/
-
-#testimonials {
-  max-height: 100vw;
-  padding: 100px;
-  background-image: url('../assets/BANNER-2.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top: #d07f57 4px solid;
-}
-
-.swiper-wrapper-test {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-}
-
-#testimonials h1 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #fff;
-  font-size: 40px;
-}
-
-#testimonials .container {
-  margin-left: 0;
-  margin-right: 0;
-  max-height: 50rem;
-}
-
-#testimonials header {
-  margin-bottom: 0;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-#testimonials blockquote {
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-radius: 0.25rem;
-  background-color: transparent;
-  background-color: #ececec;
-  border: 4px solid #d07f57;
-}
-
-#testimonials blockquote h3 {
-  text-align: center;
-  padding: 2rem;
-}
-
-#testimonials blockquote div {
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-  border-radius: 5%;
-}
-
-/*footer*/
-
-footer {
-  display: flex;
-  width: 100vw;
-  height: 50vh;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-  border-top: #fff 4px solid;
-  margin: 0 auto;
-  gap: 20px;
-}
-
-footer .footer-msg {
-  width: 200px;
-  margin-right: 100px;
-}
-
-footer .footer-msg h1 {
-  font-size: 40px;
-}
-
-footer .footer-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 305px;
-
-  background-color: #d07f57;
-  height: 200px;
-  border-radius: 28px;
-  border: 4px solid #fff;
-  text-align: center;
-}
-
-footer .footer-item a {
-  color: #fff;
-  text-decoration: none;
-  transition: ease all 0.5s;
-}
-
-footer .footer-item a:hover {
-  color: #0e2440;
-}
-
-footer img {
-  width: 25%;
-  color: #fff;
-  -webkit-filter: invert(100%); /* Safari/Chrome */
-  filter: invert(100%);
 }
 
 /* Responsivo */
@@ -628,6 +677,7 @@ footer img {
     padding: 2rem 4rem;
     gap: 5rem;
   }
+
   /* 
   #sobre-lp .about-lp-text {
     max-width: 60%;
@@ -682,6 +732,7 @@ footer img {
     word-break: break-all;
     max-width: 180px;
   }
+
   #terapias .terapias-text p {
     font-size: 15px;
     max-width: 300px;
@@ -734,6 +785,7 @@ footer img {
     align-items: center;
     max-width: 500px;
   }
+
   /* 
   #etapas-consulta .etapas-quadros .quadro h1 {
     font-size: 150px;
@@ -747,33 +799,31 @@ footer img {
 
   /*footer*/
 
-  footer {
-    width: 100vw;
-    height: 60vh;
-    padding: 40px;
-    gap: 20px;
-  }
-
-  footer .footer-msg {
-    width: 200px;
-    margin-right: 20px;
-  }
-
-  footer .footer-msg h1 {
+  .contact .footer-msg h1 {
     font-size: 30px;
   }
 
-  footer .footer-item {
-    width: 300px;
-    height: 200px;
+  .container-all {
+    flex-direction: column;
   }
 
-  /* footer img {
-    width: 25%;
-    color: #fff;
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-  } */
+  .container {
+    width: 50%;
+    min-height: 50vh;
+  }
+
+  .card {
+    background-color: #0d2a59;
+    width: 350px;
+    min-height: 250px;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 30px;
+    margin: 0 auto;
+  }
 }
 
 /* CELULAR */
@@ -820,6 +870,7 @@ footer img {
     font-size: 15px;
     padding: 10px 30px;
   }
+
   /* * About LP */
 
   #sobre-lp {
@@ -859,6 +910,7 @@ footer img {
     width: 100%;
     margin-bottom: 10px;
   }
+
   #terapias .terapias-text p {
     font-size: 16px;
     width: 100%;
@@ -935,39 +987,22 @@ footer img {
 
   /*DEPOIMENTOS*/
 
-  /* #testimonials {
-  max-height: 100vw;
-  padding: 100px;
-  background-image: url('../assets/BANNER-2.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top: #d07f57 4px solid;
-} */
-
-  .swiper-wrapper-test {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-  }
-
   /*footer*/
 
-  footer {
-    width: 100vw;
-    height: 100vh;
-    padding: 40px;
-    gap: 20px;
-    flex-direction: column;
+  .contact .footer-msg h1 {
+    font-size: 25px;
   }
 
-  footer .footer-msg {
-    width: 200px;
-    margin-right: 0px;
+  .container {
+    width: 100%;
+    min-height: 40vh;
   }
 
-  footer .footer-msg h1 {
-    font-size: 20px;
+  .card {
+    background-color: #0d2a59;
+    width: 300px;
+    min-height: 250px;
+    padding: 20px;
+    margin: 0 auto;
   }
 }

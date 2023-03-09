@@ -36,10 +36,10 @@ const swiperTest = new Swiper('.swiper-container-test', {
   mousewheel: true,
   keyboard: true,
   setWrapperSize: true,
-  breakpoints: {
-    767: {
-      slidesPerView: 2,
-      setWrapperSize: true,
-    },
-  },
+  // breakpoints: {
+  //   767: {
+  //     slidesPerView: 2,
+  //     setWrapperSize: true,
+  //   },
+  // },
 });
