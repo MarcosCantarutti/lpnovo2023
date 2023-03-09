@@ -843,6 +843,7 @@ footer img {
   #main-banner .banner-container {
     width: 100vw;
     height: 100vh;
+    background-image: url('../assets/BANNER-PRINCIPAL\ CELULAR.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1004,5 +1005,190 @@ footer img {
     min-height: 250px;
     padding: 20px;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #main-banner .banner-container {
+    background-image: url('../assets/BANNER-PRINCIPAL\ CELULAR.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #main-banner .banner-container .main-container {
+    margin: 0 auto;
+    width: 100vw;
+    padding: 10px;
+    margin-bottom: 150px;
+  }
+
+  #main-banner .banner-container .main-container h1 {
+    font-size: 35px;
+    word-break: normal;
+    padding-left: 0px;
+  }
+
+  #main-banner .banner-container .main-container span {
+    font-size: 20px;
+  }
+
+  #main-banner .banner-container .main-container .main-button {
+    margin-top: 100px;
+    font-size: 14px;
+    padding: 15px;
+    background-color: #d07f57;
+  }
+
+  #main-banner .banner-container .main-container .main-button:hover {
+    background-color: transparent;
+  }
+
+  /* * About LP */
+
+  #sobre-lp {
+    padding: 3rem;
+    gap: 5rem;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #sobre-lp .about-lp-text h1 {
+    font-size: 25px;
+  }
+
+  #sobre-lp .about-lp-btn .button {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  /* terapias */
+  #terapias {
+    flex-direction: column;
+  }
+
+  #terapias .terapias-text {
+    padding: 50px;
+    width: 100vw;
+  }
+
+  #terapias .terapias-text h1 {
+    font-size: 28px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #terapias .terapias-text p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  /*SLIDE*/
+
+  #terapias .swiper-wrapper img {
+    width: 250px;
+  }
+
+  #terapias .arrow {
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    bottom: 250px;
+  }
+
+  #terapias .arrow img,
+  #terapias .arrow-prev img {
+    width: 60px;
+  }
+
+  #terapias .arrow-prev {
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    bottom: 250px;
+  }
+
+  /*Etapas*/
+
+  #etapas-consulta {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #etapas-consulta h1 {
+    color: #0e2440;
+    font-size: 30px;
+    max-width: 500px;
+    margin-top: 20px;
+  }
+
+  #etapas-consulta button {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+
+  #etapas-consulta .etapas-quadros {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #etapas-consulta .etapas-quadros .quadro {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  #etapas-consulta .etapas-quadros .quadro h1 {
+    font-size: 100px;
+    padding: 10px;
+  }
+
+  #etapas-consulta .etapas-quadros .quadro p {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /*DEPOIMENTOS*/
+
+  #testimonials {
+    padding-left: 100px;
+  }
+
+  #testimonials .testimonials p {
+    font-size: 15px;
+    width: 390px;
+  }
+
+  /*footer*/
+
+  .contact {
+    gap: 30px;
+  }
+
+  .contact .footer-msg h1 {
+    font-size: 25px;
+  }
+
+  .container {
+    width: 100%;
+    min-height: 40vh;
+  }
+
+  .card {
+    background-color: #0d2a59;
+    width: 300px;
+    min-height: 250px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .container-all {
+    gap: 50px;
   }
 }
