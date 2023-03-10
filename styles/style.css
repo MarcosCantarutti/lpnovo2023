@@ -523,54 +523,37 @@ footer img {
 /* ABA SOBRE */
 #main-about {
   width: 100vw;
-  height: 350vh;
-  background-image: url('../assets/BANNER-PROFISSIONAIS.png');
+  background-image: url('../assets/fundo.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-}
-
-#main-about .about-01,
-#main-about .about-02 {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   padding: 100px;
+  gap: 100px;
 }
 
-#main-about .about-01 div {
-  width: 40vw;
-  height: 100vh;
-  margin-top: 90px;
+.about-01,
+.about-02 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-01 .text,
+.about-02 .text {
+  width: 60%;
 }
 
-#main-about .about-01 div h1 {
-  font-size: 40px;
-  margin-bottom: 5px;
-  margin-left: 80px;
+.about-01 .img-container,
+.about-02 .img-container {
+  width: 40%;
 }
 
-#main-about .about-01 div p {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-#main-about .about-02 div {
-  width: 50vw;
-  height: 100vh;
-  margin-top: 580px;
-  margin-left: 620px;
-}
-
-#main-about .about-02 div h1 {
-  font-size: 40px;
-  margin-bottom: 5px;
-}
-
-#main-about .about-02 div p {
-  font-size: 16px;
-  margin-bottom: 5px;
+.about-01 .img-container img,
+.about-02 .img-container img {
+  max-width: 100%;
 }
 
 /* Responsivo */
@@ -843,7 +826,7 @@ footer img {
   #main-banner .banner-container {
     width: 100vw;
     height: 100vh;
-    background-image: url('../assets/BANNER-PRINCIPAL\ CELULAR.png');
+    background-image: url('../assets/banner-mobile.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1018,7 +1001,7 @@ footer img {
 
 @media only screen and (max-width: 450px) {
   #main-banner .banner-container {
-    background-image: url('../assets/BANNER-PRINCIPAL\ CELULAR.png');
+    background-image: url('../assets/banner-mobile.png');
     display: flex;
     align-items: center;
     justify-content: center;
