@@ -370,6 +370,10 @@ header .header-container div {
 
 /*DEPOIMENTOS*/
 
+#testimonials {
+  border-top: #d07f57 4px solid;
+}
+
 .testimonials-container {
   position: relative;
   display: flex;
@@ -377,8 +381,7 @@ header .header-container div {
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
-  padding: 15px;
-  border-top: #d07f57 4px solid;
+  padding: 25px;
 }
 
 #testimonials .main-title-container h3 {
@@ -391,7 +394,7 @@ header .header-container div {
 }
 
 .swiper-container-test {
-  width: 60%;
+  width: 100%;
 }
 
 .swiper-container-test .swiper-wrapper {
@@ -566,7 +569,7 @@ footer img {
 }
 .about-01 .text,
 .about-02 .text {
-  width: 60%;
+  width: 95%;
 }
 
 .about-01 .img-container,
@@ -1045,6 +1048,9 @@ footer img {
 }
 
 @media only screen and (max-width: 450px) {
+  html {
+    text-align: justify;
+  }
   #main-banner .banner-container {
     background-image: url('../assets/banner-mobile.png');
     display: flex;
@@ -1062,8 +1068,9 @@ footer img {
   }
 
   #main-banner .banner-container .main-container {
-    padding-top: 100%;
-    padding-right: 5%;
+    padding-top: 70%;
+    padding-right: 0;
+    padding-left: 20px;
     align-items: flex-start;
   }
 
@@ -1082,19 +1089,20 @@ footer img {
 
   #main-banner .banner-container .main-container .main-button {
     font-size: 15px;
-    margin: 40px 25px;
+    margin: 40px 10px 0 0;
     padding: 10px;
   }
 
   /* * About LP */
 
   #sobre-lp {
-    padding: 3rem;
+    padding: 2rem;
     gap: 5rem;
     flex-direction: column;
     gap: 20px;
     align-items: center;
     justify-content: center;
+    text-align: justify;
   }
 
   #sobre-lp .about-lp-text h1 {
@@ -1114,6 +1122,7 @@ footer img {
   #terapias .terapias-text {
     padding: 50px;
     width: 100vw;
+    text-align: justify;
   }
 
   #terapias .terapias-text h1 {
@@ -1130,7 +1139,7 @@ footer img {
   /*SLIDE*/
 
   #terapias .swiper-wrapper img {
-    width: 250px;
+    width: 220px;
   }
 
   #terapias .arrow {
@@ -1199,12 +1208,16 @@ footer img {
   /*DEPOIMENTOS*/
 
   #testimonials {
-    padding-left: 100px;
+    padding-left: 0px;
   }
 
   #testimonials .testimonials p {
     font-size: 15px;
     width: 390px;
+  }
+
+  #testimonials .swiper-container-test {
+    width: 93%;
   }
 
   /*footer*/
@@ -1218,7 +1231,7 @@ footer img {
   }
 
   .contact .footer-msg h1 {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .container {
