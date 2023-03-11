@@ -559,6 +559,7 @@ footer img {
   margin: 0 auto;
   padding: 100px;
   gap: 100px;
+  text-align: justify;
 }
 
 .about-01,
@@ -569,7 +570,8 @@ footer img {
 }
 .about-01 .text,
 .about-02 .text {
-  width: 95%;
+  width: 60%;
+  font-size: 16px;
 }
 
 .about-01 .img-container,
@@ -826,6 +828,34 @@ footer img {
     font-size: 16px;
     padding: 20px;
   } */
+
+  /* ABA SOBRE */
+  #main-about {
+    padding: 50px;
+    gap: 60px;
+  }
+
+  .about-01 {
+    flex-direction: column-reverse;
+  }
+  .about-02 {
+    flex-direction: column;
+  }
+  .about-01 .text,
+  .about-02 .text {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .about-01 .img-container,
+  .about-02 .img-container {
+    width: 40%;
+  }
+
+  .about-01 .img-container img,
+  .about-02 .img-container img {
+    max-width: 100%;
+  }
 
   /*footer*/
 
