@@ -47,19 +47,37 @@ const swiper = new Swiper('.swiper-container', {
 });
 
 const swiperTest = new Swiper('.swiper-container-test', {
-  slidesPerView: 3,
-  mousewheel: true,
-  keyboard: true,
-  setWrapperSize: true,
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 100,
+  // Responsive breakpoints
   breakpoints: {
-    767: {
+    // when window width is >= 320px
+    320: {
       slidesPerView: 1,
-      setWrapperSize: true,
+      spaceBetween: 20,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 50,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    // when window width is >= 800px
+    800: {
+      slidesPerView: 3,
+      spaceBetween: 50,
     },
   },
-});
 
-// swiperButton.addEventListener('click', () => {
-//   let swiperWrapper = document.querySelector('.swiper-wrapper');
-//   console.log(swiperWrapper.style.transform);
-// });
+  mousewheel: true,
+  keyboard: true,
+  navigation: {
+    nextEl: '.swiper-button-next-test',
+    prevEl: '.swiper-button-prev-test',
+  },
+});

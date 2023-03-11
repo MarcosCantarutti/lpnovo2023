@@ -370,42 +370,62 @@ header .header-container div {
 
 /*DEPOIMENTOS*/
 
-#testimonials {
-  max-height: 50rem;
-
-  padding: 50px;
+.testimonials-container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 15px;
   border-top: #d07f57 4px solid;
 }
 
-#testimonials .main-title-container .main-title {
+#testimonials .main-title-container h3 {
   font-size: 30px;
+  margin-bottom: 10px;
 }
 
-#testimonials .testimonials {
-  max-width: 400px;
+#testimonials .main-title-container p {
+  margin-bottom: 60px;
 }
 
-#testimonials .testimonials p {
-  margin: 25px 0;
+.swiper-container-test {
+  width: 60%;
 }
 
-#testimonials .swiper-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+.swiper-container-test .swiper-wrapper {
   display: flex;
-  gap: 50px;
-  transition-property: transform;
-  transition-timing-function: var(
-    --swiper-wrapper-transition-timing-function,
-    initial
-  );
-  box-sizing: content-box;
+}
+
+#testimonials .swiper-container-test .swiper-wrapper .swiper-slide {
+  margin: 10px;
+}
+
+#testimonials .arrow {
+  z-index: 99;
+  position: absolute;
+  right: 0;
+  bottom: 120px;
+  padding: 10px;
+}
+
+#testimonials .arrow img,
+#testimonials .arrow-prev img {
+  width: 65px;
+  cursor: pointer;
+}
+
+#testimonials .arrow-prev {
+  z-index: 99;
+  position: absolute;
+  left: 0;
+  bottom: 120px;
+  padding: 10px;
+}
+
+#testimonials .arrow-prev img {
+  transform: rotate(180deg);
 }
 /* 
 #testimonials .swiper-wrapper .testimonial {
