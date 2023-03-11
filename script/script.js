@@ -1,4 +1,4 @@
-let swiperWrapper = document.querySelector('.swiper-wrapper');
+let swiperButton = document.querySelector('.swiper-button-next');
 let toggle = document.querySelector('.toggle');
 
 toggle.addEventListener('click', function myFunction() {
@@ -15,31 +15,51 @@ toggle.addEventListener('click', function myFunction() {
 
 const swiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
-  speed: 2400,
-  parallax: true,
-  pagination: {
-    el: '.swiper-pagination',
-  },
+  slidesPerView: 4,
+  speed: 1200,
   mousewheel: true,
   keyboard: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    1100: {
+      spaceBetween: 20,
+    },
+    950: {
+      slidesPerView: 2,
+      spaceBetween: 140,
+    },
+    767: {
+      slidesPerView: 2,
+      spaceBetween: 140,
+    },
+    550: {
+      slidesPerView: 2,
+      spaceBetween: 160,
+    },
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 160,
+    },
+  },
 });
 
 const swiperTest = new Swiper('.swiper-container-test', {
-  slidesPerView: 1,
-  pagination: {
-    el: '.swiper-pagination',
-  },
+  slidesPerView: 3,
   mousewheel: true,
   keyboard: true,
   setWrapperSize: true,
-  // breakpoints: {
-  //   767: {
-  //     slidesPerView: 2,
-  //     setWrapperSize: true,
-  //   },
-  // },
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+      setWrapperSize: true,
+    },
+  },
 });
+
+// swiperButton.addEventListener('click', () => {
+//   let swiperWrapper = document.querySelector('.swiper-wrapper');
+//   console.log(swiperWrapper.style.transform);
+// });
