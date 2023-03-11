@@ -45,10 +45,9 @@ header .header-container {
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
-  gap: 6rem;
-  margin: 0 auto;
+  gap: 10rem;
   position: absolute;
-  margin: 1rem auto 0;
+  margin: 10px auto 0;
   left: 0;
   right: 0;
   text-align: center;
@@ -57,8 +56,8 @@ header .header-container {
 }
 
 header .header-container .logo {
-  width: 80px;
-  transform: scale(2);
+  width: 100px;
+  transform: scale(2.2);
 }
 
 header .header-container .social {
@@ -71,12 +70,12 @@ header .header-container nav .nav-container {
   justify-content: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  gap: 1.5rem;
+  gap: 30px;
 }
 
 header .header-container nav .nav-container .nav-item a {
   color: #ffff;
-  font-size: 1rem;
+  font-size: 15px;
 }
 
 header .header-container div {
@@ -94,10 +93,8 @@ header .header-container div {
 #main-banner .banner-container {
   width: 100vw;
   height: 100vh;
-  background: url('./BANNER-PRINCIPAL.png');
+  background: url('../assets/BANNER-PRINCIPAL.png');
   background-size: cover;
-  /* position: relative; */
-
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -106,7 +103,8 @@ header .header-container div {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 10%;
+  justify-content: center;
+  padding-top: 15%;
   padding-right: 50%;
   text-align: left;
 }
@@ -115,10 +113,13 @@ header .header-container div {
   font-size: 60px;
   width: 450px;
   word-break: break-all;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 #main-banner .banner-container .main-container span {
   font-size: 18px;
+  width: 450px;
 }
 
 #main-banner .banner-container .main-container .main-button {
@@ -232,6 +233,8 @@ header .header-container div {
   font-size: 40px;
   word-break: break-all;
   max-width: 260px;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 #terapias .terapias-text p {
@@ -578,7 +581,7 @@ footer img {
   }
 
   header .header-mobile .logo {
-    width: 80px;
+    width: 100px;
     transform: scale(2);
   }
 
@@ -590,6 +593,17 @@ footer img {
   header .header-mobile .toggle.clicked {
     border: 2px solid #d07f57;
     padding: 1px;
+  }
+
+  header .toggle-nav {
+    padding: 80px 0 0;
+  }
+
+  /* BANNER */
+
+  #main-banner .banner-container .main-container {
+    padding-top: 20%;
+    padding-right: 40%;
   }
 
   /* TOOGLE NAV*/
@@ -634,24 +648,34 @@ footer img {
   /* banner */
 
   #main-banner .banner-container .main-container {
-    padding-top: 20%;
-    padding-right: 40%;
+    padding-top: 50%;
+    padding-right: 20%;
   }
 
-  /* #main-banner .banner-container .main-container h1 {
+  #main-banner .banner-container {
+    background: url('../assets/banner-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #main-banner .banner-container .main-container h1 {
     font-size: 60px;
     width: 450px;
     word-break: break-all;
+    text-shadow: black 0.1em 0.1em 0.2em;
   }
 
   #main-banner .banner-container .main-container span {
     font-size: 18px;
-  } */
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
 
   #main-banner .banner-container .main-container .main-button {
     margin-top: 80px;
     font-size: 20px;
     padding: 16px 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
   }
 
   /* About LP */
@@ -813,12 +837,12 @@ footer img {
 
 @media only screen and (max-width: 650px) {
   header .header-mobile .logo {
-    width: 60px;
+    width: 90px;
     transform: scale(2);
   }
 
   .toggle-nav {
-    margin: 50px auto;
+    /* margin: 50px auto; */
   }
 
   /* banner */
@@ -833,8 +857,9 @@ footer img {
   }
 
   #main-banner .banner-container .main-container {
-    padding-top: 30%;
-    padding-left: 10px;
+    padding-top: 100%;
+    padding-right: 20%;
+    align-items: flex-start;
   }
 
   #main-banner .banner-container .main-container h1 {
@@ -850,9 +875,9 @@ footer img {
   }
 
   #main-banner .banner-container .main-container .main-button {
-    margin-top: 40px;
-    font-size: 15px;
-    padding: 10px 30px;
+    font-size: 14px;
+    padding-left: 30px;
+    margin: 40px 25px;
   }
 
   /* * About LP */
@@ -1007,32 +1032,38 @@ footer img {
     justify-content: center;
   }
 
-  #main-banner .banner-container .main-container {
-    margin: 0 auto;
+  #main-banner .banner-container {
     width: 100vw;
-    padding: 10px;
-    margin-bottom: 150px;
+    height: 100vh;
+    background-image: url('../assets/banner-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #main-banner .banner-container .main-container {
+    padding-top: 100%;
+    padding-right: 5%;
+    align-items: flex-start;
   }
 
   #main-banner .banner-container .main-container h1 {
     font-size: 35px;
-    word-break: normal;
+    width: 280px;
+    word-break: break-all;
     padding-left: 0px;
   }
 
   #main-banner .banner-container .main-container span {
-    font-size: 20px;
+    font-size: 16px;
+    width: 300px;
+    padding-left: 0px;
   }
 
   #main-banner .banner-container .main-container .main-button {
-    margin-top: 100px;
-    font-size: 14px;
-    padding: 15px;
-    background-color: #d07f57;
-  }
-
-  #main-banner .banner-container .main-container .main-button:hover {
-    background-color: transparent;
+    font-size: 15px;
+    margin: 40px 25px;
+    padding: 10px;
   }
 
   /* * About LP */
