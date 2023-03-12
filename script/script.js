@@ -55,22 +55,22 @@ const swiperTest = new Swiper('.swiper-container-test', {
     // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 100,
     },
     // when window width is >= 480px
     480: {
       slidesPerView: 1,
-      spaceBetween: 50,
+      spaceBetween: 100,
     },
     // when window width is >= 640px
     640: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 100,
     },
     // when window width is >= 800px
     800: {
       slidesPerView: 3,
-      spaceBetween: 50,
+      spaceBetween: 100,
     },
   },
 

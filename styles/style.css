@@ -399,6 +399,7 @@ header .header-container div {
 
 .swiper-container-test .swiper-wrapper {
   display: flex;
+  padding-left: 100px;
 }
 
 #testimonials .swiper-container-test .swiper-wrapper .swiper-slide {
@@ -443,7 +444,7 @@ header .header-container div {
   justify-content: center;
   border-top: 4px solid #d07f57;
   padding: 50px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   background-color: #040e28;
 }
 
@@ -570,7 +571,7 @@ footer img {
 }
 .about-01 .text,
 .about-02 .text {
-  width: 60%;
+  width: 80%;
   font-size: 16px;
 }
 
@@ -831,6 +832,7 @@ footer img {
 
   /* ABA SOBRE */
   #main-about {
+    margin-top: 100px;
     padding: 50px;
     gap: 60px;
   }
@@ -849,7 +851,8 @@ footer img {
 
   .about-01 .img-container,
   .about-02 .img-container {
-    width: 40%;
+    width: 80%;
+    margin: 0 auto 20px;
   }
 
   .about-01 .img-container img,
@@ -1248,6 +1251,10 @@ footer img {
 
   #testimonials .swiper-container-test {
     width: 93%;
+  }
+
+  .swiper-container-test .swiper-wrapper {
+    padding-left: 0px;
   }
 
   /*footer*/
