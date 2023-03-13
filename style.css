@@ -93,7 +93,7 @@ header .header-container div {
 #main-banner .banner-container {
   width: 100vw;
   height: 100vh;
-  background: url('../assets/BANNER-PRINCIPAL.png');
+  background: url('./assets/BANNER-PRINCIPAL.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -161,7 +161,7 @@ header .header-container div {
   border-top: 6px solid #d07f57;
   border-bottom: 4px solid #ffffff;
 
-  background: url('../assets/BANNER-2.png');
+  background: url('./assets/BANNER-2.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -550,7 +550,7 @@ footer img {
 /* ABA SOBRE */
 #main-about {
   width: 100vw;
-  background-image: url('../assets/fundo.jpeg');
+  background-image: url('./assets/fundo.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -679,7 +679,7 @@ footer img {
   }
 
   #main-banner .banner-container {
-    background: url('../assets/banner-mobile.png');
+    background: url('./assets/banner-mobile.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -906,7 +906,7 @@ footer img {
   #main-banner .banner-container {
     width: 100vw;
     height: 100vh;
-    background-image: url('../assets/banner-mobile.png');
+    background-image: url('./assets/banner-mobile.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1085,7 +1085,7 @@ footer img {
     text-align: justify;
   }
   #main-banner .banner-container {
-    background-image: url('../assets/banner-mobile.png');
+    background-image: url('./assets/banner-mobile.png');
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1094,7 +1094,7 @@ footer img {
   #main-banner .banner-container {
     width: 100vw;
     height: 100vh;
-    background-image: url('../assets/banner-mobile.png');
+    background-image: url('./assets/banner-mobile.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
