@@ -53,9 +53,9 @@ header .header-container {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: nowrap;
-  gap: 10rem;
+  gap: 0rem;
   position: absolute;
   margin: 10px auto 0;
   left: 0;
@@ -66,7 +66,7 @@ header .header-container {
 }
 
 header .header-container .logo {
-  width: 100px;
+  width: 80px;
   transform: scale(2.2);
 }
 
@@ -85,7 +85,7 @@ header .header-container nav .nav-container {
 
 header .header-container nav .nav-container .nav-item a {
   color: #ffff;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 header .header-container div {
@@ -622,7 +622,7 @@ footer img {
   }
 
   header .header-mobile .logo {
-    width: 100px;
+    width: 80px;
     transform: scale(2);
   }
 
