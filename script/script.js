@@ -16,9 +16,10 @@ toggle.addEventListener('click', function myFunction() {
 const swiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
   slidesPerView: 4,
-  speed: 1200,
+  speed: 1000,
   mousewheel: true,
   keyboard: true,
+  loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
