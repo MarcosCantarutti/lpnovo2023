@@ -1,3 +1,13 @@
+/*
+Theme Name: LP Terapeutas
+Theme URI: lpterapeutas.com
+Author: Marcos Cantarutti
+Author URI: https://marcoscantarutti.com.br
+Description: Site  lpterapeutas criado para atender clientes em busca de qualidade de vida
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
 *,
 *:after,
 *:before {
@@ -156,7 +166,7 @@ header .header-container div {
 #sobre-lp {
   display: flex;
   align-items: center;
-  padding: 4rem 8rem;
+  padding: 90px;
   gap: 10rem;
   border-top: 6px solid #d07f57;
   border-bottom: 4px solid #ffffff;
@@ -588,6 +598,11 @@ footer img {
 /* Responsivo */
 
 /* Extra large devices: 1200 >  */
+@media only screen and (max-width: 1300px) {
+  #terapias .swiper-wrapper {
+    gap: 80px;
+  }
+}
 
 @media only screen and (max-width: 1200px) {
   header .header-container {
@@ -667,6 +682,10 @@ footer img {
   .toggle-nav .social a img {
     width: 50px;
   }
+
+  #terapias .swiper-wrapper {
+    gap: 0px;
+  }
 }
 
 /* IPAD */
@@ -707,7 +726,7 @@ footer img {
   /* About LP */
 
   #sobre-lp {
-    padding: 2rem 4rem;
+    padding: 90px;
     gap: 5rem;
   }
 
