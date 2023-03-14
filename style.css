@@ -526,7 +526,13 @@ header .header-container div {
   -webkit-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
   -o-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
   transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  font-weight: bold;
   /* custom */
+}
+
+.card a {
+  color: #d07f57;
+  font-weight: bold;
 }
 
 footer .container hr {
