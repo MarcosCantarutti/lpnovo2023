@@ -445,6 +445,59 @@ header .header-container div {
 #testimonials .swiper-wrapper .testimonial {
 } */
 
+/* main-blog */
+
+#main-blog {
+  background-color: #000;
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 4px solid #d07f57;
+  padding: 50px;
+  margin: 0 auto;
+  /* margin-top: 100px; */
+}
+
+#main-blog .main-blog-container {
+  width: 60%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#main-blog .main-blog-container h1 {
+  font-size: 30px;
+  text-align: left;
+}
+
+#main-blog .main-blog-container button {
+  margin-top: 80px;
+  font-size: 20px;
+  word-break: break-all;
+  color: #fff;
+  background-color: transparent;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 28px;
+  border: 2px solid #d07f57;
+  display: inline-block;
+  cursor: pointer;
+  padding: 16px 31px;
+  text-decoration: none;
+  transition: ease all 0.3s;
+  width: 60%;
+  margin: 50px auto 0;
+}
+
+#main-blog .main-blog-container button:hover {
+  background-color: #d07f57;
+}
+
 /*footer*/
 
 .contact {
@@ -569,6 +622,22 @@ footer .copy a {
 .about-01 .img-container img,
 .about-02 .img-container img {
   max-width: 100%;
+}
+
+/* btn whats */
+.whatsapp-btn {
+  position: fixed;
+  width: 80px;
+  bottom: 0;
+  right: 1px;
+  margin: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.whatsapp-btn img {
+  width: 100%;
 }
 
 /* Responsivo */
@@ -706,49 +775,6 @@ footer .copy a {
     gap: 5rem;
   }
 
-  /* 
-  #sobre-lp .about-lp-text {
-    max-width: 60%;
-  } */
-
-  /* #sobre-lp .about-lp-text h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-
-  #sobre-lp .about-lp-text h4 {
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-
-  #sobre-lp .about-lp-text p {
-    font-size: 15px;
-    margin-bottom: 10px;
-  } */
-
-  /* #sobre-lp .about-lp-btn .button {
-    font-size: 16px;
-
-    color: #ffff;
-    background-color: transparent;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: left;
-    border-radius: 28px;
-    border: 2px solid #d07f57;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    padding: 10px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #d07f57;
-    transition: ease all 0.3s;
-  }
-
-  #sobre-lp .about-lp-btn .button:hover {
-    background-color: #d07f57;
-  } */
-
   /* terapias */
 
   #terapias .terapias-text {
@@ -853,6 +879,20 @@ footer .copy a {
   .about-01 .img-container img,
   .about-02 .img-container img {
     max-width: 100%;
+  }
+
+  #main-blog .main-blog-container {
+    width: 100%;
+    height: 50%;
+  }
+
+  #main-blog .main-blog-container h1 {
+    font-size: 25px;
+    text-align: left;
+  }
+
+  #main-blog .main-blog-container button {
+    width: 100%;
   }
 
   /*footer*/
@@ -1050,6 +1090,22 @@ footer .copy a {
   }
 
   /*DEPOIMENTOS*/
+
+  /* main-blog */
+
+  #main-blog .main-blog-container {
+    width: 100%;
+    height: 50%;
+  }
+
+  #main-blog .main-blog-container h1 {
+    font-size: 25px;
+    text-align: left;
+  }
+
+  #main-blog .main-blog-container button {
+    width: 100%;
+  }
 
   /*footer*/
 
