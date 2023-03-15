@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+    <!-- Menu navegação -->
     <header>
         <nav class="toggle-nav">
             <div class="menu">
@@ -28,7 +28,7 @@
                     <li class="nav-item"><a href="/#depoimentos">Depoimentos</a></li>
                     <li class="nav-item"><a href="./sobre.html">Quem somos</a></li>
                     <li class="nav-item"><a href="#">Blog</a></li>
-                    <li class="nav-item"><a href="/#footer">Contatos</a></li>
+                    <li class="nav-item"><a href="/#contatos">Contatos</a></li>
             </div>
             <div class="social">
                 <a href="https://www.tiktok.com/@paulocantarutti" target="_blank">
@@ -65,7 +65,7 @@
                     <li class="nav-item"><a href="/#depoimentos">Depoimentos</a></li>
                     <li class="nav-item"><a href="/sobre.html">Quem somos</a></li>
                     <li class="nav-item"><a href="/blog">Blog</a></li>
-                    <li class="nav-item"><a href="/#footer">Contatos</a></li>
+                    <li class="nav-item"><a href="/#contatos">Contatos</a></li>
                 </ul>
             </nav>
 
@@ -86,20 +86,23 @@
 
     </header>
 
+    <!-- Banner principal -->
     <section id="main-banner">
         <div class="banner-container">
 
             <div class="main-container">
                 <h1>Excelência em Psicoterapia</h1>
                 <span>Hipnoterapia, Psicologia, Psicanálise e Neurociência</span>
-                <button class="main-button">Quero assumir o controle da minha vida</button>
+                <button class="main-button"><a style="color:#fff; cursor:  pointer;"
+                        href="https://api.whatsapp.com/send/?phone=5534998372915&text&type=phone_number&app_absent=0"
+                        target="_blank"> Quero assumir o controle da minha vida </a></button>
             </div>
 
         </div>
 
     </section>
 
-
+    <!-- Sobre a LP -->
     <section id="sobre-lp">
         <div class="about-lp-text">
 
@@ -119,12 +122,15 @@
 
         <div class="about-lp-btn">
             <button class="button">
-                Agendar minha consulta
+                <a style="color:#fff; cursor:  pointer;"
+                    href="https://api.whatsapp.com/send/?phone=5534998372915&text&type=phone_number&app_absent=0"
+                    target="_blank"> Agendar minha consulta </a>
             </button>
         </div>
 
     </section>
 
+    <!-- Terapias e carrosel -->
     <section id="terapias">
 
         <div class="terapias-text">
@@ -204,6 +210,7 @@
 
     </section>
 
+    <!-- Consulta -->
     <section id="etapas-consulta">
 
         <div class="etapas-main">
@@ -228,8 +235,9 @@
 
     </section>
 
+    <!-- Depoimentos -->
     <section id="testimonials">
-        <div class="testimonials-container">
+        <div id="depoimentos" class="testimonials-container">
             <div class="main-title-container">
                 <h3>Depoimentos</h3>
                 <p>Aqui estão alguns depoimentos com resultados sólidos e extraordinários. Conheça mais sobre nosso
@@ -242,7 +250,7 @@
                     <div class="testimonial swiper-slide">
 
                         <video width="320" height="240" controls
-                            style="background-color: #0d2a59; margin-right: 100px;">
+                            style="background-color: #0d2a59; margin-right: 100px;  border-radius: 10px;">
                             <source src="./assets/videos/novo-01.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -252,7 +260,17 @@
                     <div class="testimonial swiper-slide">
 
                         <video width="320" height="240" controls
-                            style="background-color: #0d2a59; margin-right: 100px;">
+                            style="background-color: #0d2a59; margin-right: 100px;  border-radius: 10px;">
+                            <source src="./assets/videos/novo-02.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+                    </div>
+
+                    <div class="testimonial swiper-slide">
+
+                        <video width="320" height="240" controls
+                            style="background-color: #0d2a59; margin-right: 100px;  border-radius: 10px;">
                             <source src="./assets/videos/ana.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -261,12 +279,15 @@
 
                     <div class="testimonial swiper-slide">
 
-                        <video width="320" height="240" controls style="background-color: #0d2a59;">
+                        <video width="320" height="240" controls
+                            style="background-color: #0d2a59; margin-right: 100px;  border-radius: 10px;">
                             <source src="./assets/videos/carol.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
 
                     </div>
+
+
                 </div>
 
 
@@ -282,13 +303,16 @@
         </div>
     </section>
 
+    <!-- Blog -->
     <section id="main-blog">
         <div class="main-blog-container">
             <h1> Acesse nosso <b>Blog</b> e fique por dentro dos nossos conteúdos</h1>
-            <button>Ver publicações <span style="font-size: 30px; margin-left: 20px;">&#x2192</span></button>
+            <a href="/blog" target="_blank"><button>Ver publicações <span
+                        style="font-size: 30px; margin-left: 20px;">&#x2192</span></button></a>
         </div>
     </section>
 
+    <!-- Rodapé -->
     <footer id="footer">
         <div class="whatsapp-btn">
             <a class="whatsapp-link" href="https://wa.me/5534998372915" target="_blank">
@@ -296,7 +320,7 @@
             </a>
         </div>
 
-        <div class="contact">
+        <div class="contact" id="contatos">
             <div class="footer-msg">
                 <h1>Como podemos te ajudar? </h1>
             </div>
@@ -343,9 +367,9 @@
             </div>
 
             <div class="copy">
-                <span>Site desenvoldido por: <a href="http://www.marcoscantarutti.com.br">Marcos Cantarutti</a> |
-                    Designed by: <a href="https://www.behance.net/reisandcodesign">Vinicíus Reis</a></span>
-                <span>Todos os direitos reservados.</span>
+                <span>Desenvolvido por: <a href="http://www.marcoscantarutti.com.br">Marcos Cantarutti</a> |
+                    Designed by: <a href="https://www.behance.net/reisandcodesign">Vinicíus Reis</a></span><br />
+                <span style="font-weight: bold;">Todos os direitos reservados.</span>
             </div>
         </div>
 

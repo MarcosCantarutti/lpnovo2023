@@ -474,7 +474,13 @@ header .header-container div {
   text-align: left;
 }
 
-#main-blog .main-blog-container button {
+#main-blog .main-blog-container a {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#main-blog .main-blog-container a button {
   margin-top: 80px;
   font-size: 20px;
   word-break: break-all;
@@ -494,7 +500,7 @@ header .header-container div {
   margin: 50px auto 0;
 }
 
-#main-blog .main-blog-container button:hover {
+#main-blog .main-blog-container a button:hover {
   background-color: #d07f57;
 }
 
@@ -579,6 +585,8 @@ footer img {
 footer .copy {
   margin-top: 20px;
   color: #000;
+  text-align: center;
+  font-size: 13px;
 }
 
 footer .copy a {
@@ -607,6 +615,7 @@ footer .copy a {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
 .about-01 .text,
 .about-02 .text {
@@ -891,7 +900,7 @@ footer .copy a {
     text-align: left;
   }
 
-  #main-blog .main-blog-container button {
+  #main-blog .main-blog-container a button {
     width: 100%;
   }
 
@@ -1103,7 +1112,7 @@ footer .copy a {
     text-align: left;
   }
 
-  #main-blog .main-blog-container button {
+  #main-blog .main-blog-container a button {
     width: 100%;
   }
 
